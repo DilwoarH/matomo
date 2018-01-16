@@ -53,6 +53,8 @@
         "ShortcutCalendar": "to open calendar (d stands for Date)",
         "ShortcutSearch": "to open the search (f stands for Find)",
         "ShortcutHelp": "to show this help",
+        "ShortcutHome": "to go to top of the page",
+        "ShortcutEnd": "to go to bottom of the page",
         "ShowJSCode": "Show the JavaScript code to insert",
         "SkipToContent": "Skip to content",
         "SubscribeAndBecomePiwikSupporter": "Proceed to a secure credit card payment page (Paypal) to become a Matomo Supporter!",

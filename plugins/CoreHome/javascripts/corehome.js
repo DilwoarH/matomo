@@ -88,6 +88,26 @@ $( document ).ready(function() {
 
     $('select').material_select();
 
+    piwikHelper.registerShortcut('home', _pk_translate('CoreHome_ShortcutHome'), function (event) {
+        if (event.preventDefault) {
+            event.preventDefault();
+        } else {
+            event.returnValue = false; // IE
+        }
+
+        $(window).scrollTo(0);
+    });
+
+    piwikHelper.registerShortcut('end', _pk_translate('CoreHome_ShortcutEnd'), function (event) {
+        if (event.preventDefault) {
+            event.preventDefault();
+        } else {
+            event.returnValue = false; // IE
+        }
+
+        $(window).scrollTo($(document).height());
+    });
+
     piwikHelper.registerShortcut('?', _pk_translate('CoreHome_ShortcutHelp') , function (event) {
         // don't open if an modal is already shown
         if (event.altKey || $('.modal.open').length) {
